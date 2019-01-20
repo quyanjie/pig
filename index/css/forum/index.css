@@ -1,0 +1,406 @@
+/* 第一部分样式 */
+/* body,html {
+    width: 100%;
+    height: 100%;
+} */
+.box1{
+    height: 50px;
+    line-height: 50px;
+}
+/* 高度和行高一致，才能让内容垂直居中 */
+.box1 .fr li{
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+} 
+/* ul右浮动到右边 li左浮动才能分开在一行 间距设置一下*/
+.box1 .fr li:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+/* 鼠标悬停时：颜色改变 底部边框出现 */
+
+/* 第二部分样式 九寨沟绝美风光*/
+div.box2{
+    background-image: url(img/bg-1.jpg);
+    background-repeat: no-repeat;
+    /* 有高度才能显示背景图片 */
+    height: 970px;
+    width: 100%;
+    overflow: hidden;
+    /* background-size: 100%; */
+}
+/* 第三部分样式 创作寄语*/
+div.box3{
+    background-image: url(img/bg-2.jpg);
+    background-repeat: no-repeat;
+    height: 1400px;
+    width: 100%;
+    /* background-size: 100%; */
+}
+/* 第四部分样式 娱乐项目 */
+div.box4{
+    background-image: url(img/bg-3.jpg);
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 100%;
+    /* background-size: 100%; */
+    background-position: 0px top;
+}
+ .lbt{
+    /* height: 600px;
+    width: 1200px; */
+    margin:0 auto;
+    position: relative;
+ }
+ .lbt li{
+    position: absolute;
+    display: none;
+    top:150px;
+    left: 490px;
+ }
+ .lbt li:first-child {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  
+  .lbt:hover .arrow {
+    display: block;
+  }
+
+  .arrow-left,
+    .arrow-right {
+      font-family: "SimSun", "宋体";
+      width: 60px;
+      height: 90px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    
+    .arrow-left:hover,
+    .arrow-right:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .arrow-left {
+      left: 0;
+    }
+    
+    .arrow-right {
+      right: 0;
+    }
+/* 第五部分样式 如何抵达 */
+div.box5{
+    background-image: url(img/bg-4.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+/* 第六部分样式 旋转木马轮播图 */
+
+div.box6{
+    background-color: skyblue;
+    height: 800px;
+}
+ /* 初始化 */
+
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* 设定文档的大小为屏幕的大小 */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box {
+    width: 100%;
+    height: 25%;
+}
+
+.screenItem {
+    width: 100%;
+    height: 400%;
+    position: absolute;
+    top: 0;
+}
+.controls {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+
+}
+
+/* li */
+
+.controls li {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    margin-bottom: 20px;
+    color: green;
+    font: bold 20px/30px '宋体';
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+
+}
+
+.controls li.active {
+    background:pink;
+   
+
+}
+.back{
+    position: fixed;
+    top: 880px;
+    right: 14px;
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    font-size:30px;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+/* 轮播图样式 */
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  } */
+  
+  .lbt {
+    /* height: 340px;
+    width: 790px; */
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .lbt li {
+    position: absolute;
+    display: none;
+  }
+
+  .lbt li:first-child {
+    display: block;
+  }
+  
+  
+  .arrow {
+    display: none;
+  }
+  
+  .lbt:hover .arrow {
+    display: block;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  
+  .arrow-left {
+    left: 0;
+  }
+  
+  .arrow-right {
+    right: 0;
+  }
+   /* 音乐图片样式 */
+   .audioplay{
+    position: fixed;
+    top: 8px;
+    right: 220px;
+    width: 40px;
+    height: 40px;
+    background:powderblue;
+    border-radius: 50%;
+   }
+   /* 音乐按钮旋转 */
+@keyframes mu {
+    0%{}
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.audioplay{
+    animation: mu 4s linear infinite;
+}
+/* 旋转木马轮播图样式开始 */
+@charset "UTF-8";
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+fieldset,
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+a,
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.slide {
+    height: 500px;
+    position: relative;
+}
+
+.slide li {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    transition: all .5s;
+}
+
+.slide li img {
+    width: 100%;
+}
+
+.arrow1 {
+    position: relative;
+    z-index: 99;
+    top: 50%;
+    display: none;
+}
+
+.wrap:hover .arrow1 {
+    display: block;
+}
+
+.prev,
+.next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    margin-top: -56px;
+    background: url(img/prev.png) no-repeat;
+    z-index: 99;
+}
+
+.next {
+    right: 0;
+    background-image: url(img/next.png);
+}
+
+.slide .slide1 {
+    width: 400px;
+    top: 20px;
+    left: 50px;
+    opacity: 0.4;
+    z-index: 3;
+   
+}
+
+.slide .slide2 {
+    width: 600px;
+    top: 70px;
+    left: 0;
+    opacity: 0.8;
+    z-index: 4;
+  
+}
+
+.slide .slide3 {
+    width: 800px;
+    top: 100px;
+    left: 200px;
+    opacity: 1;
+    z-index: 5;
+   
+}
+
+.slide .slide4 {
+    width: 600px;
+    top: 70px;
+    left: 600px;
+    opacity: 0.8;
+    z-index: 4;   
+}
+
+.slide .slide5 {
+    width: 400px;
+    top: 20px;
+    left: 750px;
+    opacity: .4;
+    z-index: 3;  
+}
+
+.slide .slide6 {
+    width: 200px;
+    top: 20px;
+    left: 750px;
+    opacity: .2;
+    z-index: 2;   
+}
+
+.slide .slide7 {
+    width: 200px;
+    top: 20px;
+    left: 750px;
+    opacity: .2;
+    z-index: 2;          
+}
+
+/* 旋转木马轮播图样式结束 */

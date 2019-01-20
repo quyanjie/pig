@@ -1,0 +1,506 @@
+/* 金发美部分 */
+.top-bg {
+    height: 1229px;
+    background: url(../../images/activity/bj.jpg) no-repeat center top;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+
+.top-nav {
+    float: right;
+}
+
+.top-nav li {
+    width: 100px;
+    height: 50px;
+    float: right;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.top-nav ul {
+    margin-right: 20px;
+}
+
+.top-nav li a {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.top-nav li a:last-child {
+    transform: translateZ(25px);
+}
+
+.top-nav li a:first-child {
+    transform: rotateX(90deg) translateZ(15px);
+}
+
+.top-nav li:hover {
+    transform: rotateX(-90deg);
+}
+
+/* 回到顶部 */
+.return-top a {
+    position: fixed;
+    display: none;
+    right: 0;
+    bottom: 0;
+    width: 94px;
+    height: 117px;
+    z-index: 999;
+    background: url(../../images/activity/top.png) no-repeat;
+}
+
+/* 金发美妞部分结束 */
+/* <!-- 元宵坐骑礼盒开始 --> */
+.gift {
+    height: 840px;
+    margin: 0 auto;
+    background: url(../../images/activity/content-cen_01.jpg) center top no-repeat;
+    background-size: 100%;
+}
+
+.gift-tab {
+    position: relative;
+}
+
+.gift-tab ul {
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    top: 238px;
+    margin: 0 auto;
+    border: 1px solid #5967a4;
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+}
+
+/* 默认li的样式 */
+.gift-tab-sta {
+    background-color: #5967a4;
+}
+
+.gift-tab li {
+    float: left;
+    width: 49.8%;
+    font-size: 20px;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.b {
+    border-right: 1px solid #5967a4;
+}
+
+/* 鼠标经过谁谁调用 */
+.act {
+    background-color: #5967a4;
+    color: #fff;
+}
+
+.horse img {
+    margin: 0 auto;
+}
+
+.pic1 .pic1-img {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 290px;
+}
+
+.pic1-gif {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 710px;
+}
+
+/* 默认隐藏图片 */
+.pic1.pic-act {
+    display: none;
+}
+
+/* wrap 部分 */
+.wrap {
+    background: url(../../images/activity/content-cen_01.jpg) center top no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    height: 880px;
+}
+
+/* .slide-top-1 li {
+    width: 1300px;
+    margin: 0 auto;
+} */
+.slide-top .slide-top-2 li {
+    display: none;
+    left: 226px;
+    top: 98px;
+    width: 800px;
+}
+.slide-top {
+    position: relative;
+    height: 720px;
+}
+
+.slide-top li img {
+    width: 100%;
+}
+
+.slide-top ul {
+    position: absolute;
+    width: 1300px;
+    top: 180px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+.slide-top li {
+    position: absolute;
+    float: right;
+    left: 200px;
+    top: 0;
+    transition: all .5s;
+}
+
+.slide-top .slide1 {
+    width: 400px;
+    top: 20px;
+    left: 50px;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.slide-top .slide2 {
+    width: 600px;
+    top: 70px;
+    left: 0;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.slide-top .slide3 {
+    width: 800px;
+    top: 100px;
+    left: 200px;
+    opacity: 1;
+    z-index: 4;
+}
+
+.slide-top .slide4 {
+    width: 600px;
+    top: 70px;
+    left: 600px;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.slide-top .slide5 {
+    width: 400px;
+    top: 20px;
+    left: 750px;
+    opacity: .2;
+    z-index: 2;
+}
+
+.slide-bottom {
+    position: relative;
+}
+
+.slide-bottom ul {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    height: 150px;
+    width: 1280px;
+}
+
+.slide-bottom li {
+    float: left;
+    margin-right: 16px;
+    width: 235px;
+}
+
+/* 按钮部分 */
+.arrow {
+    position: relative;
+    z-index: 99;
+    top: 50%;
+    display: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev,
+.next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    margin-top: -56px;
+    background: url(../../images/activity/prev.png) no-repeat;
+    z-index: 99;
+}
+
+.next {
+    right: 0;
+    background-image: url(../../images/activity/next.png);
+}
+
+/* 新金发部分开始 */
+.new-gold {
+    height: 1299px;
+    background: url(../../images/activity/content-cen_04.jpg)center top no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+/* 上部分小图样式 */
+.new-gold-top {
+    position: relative;
+}
+
+.new-gold-top ul {
+    position: absolute;
+    width: 1050px;
+    top: 350px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+.new-gold-top li {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* 大图样式 */
+.new-gold-big {
+    position: relative;
+}
+
+.new-gold-big ul {
+    position: absolute;
+    width: 1050px;
+    top: 320px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+.new-gold-big li {
+    position: absolute;
+    display: none;
+}
+
+.new-gold-big img {
+    width: 1040px;
+}
+
+/* 复刻外装开始 */
+.clothes {
+    background: url(../../images/activity/content-cen_05.jpg)center top no-repeat;
+    background-size: 100%;
+    height: 1185px;
+}
+
+.clothes-top {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.clothes-top ul {
+    position: absolute;
+    width: 1200px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    top: 300px;
+}
+
+.clothes-top li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* js 部分 */
+.clothes-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 309px;
+}
+
+.clothes-bottom ul {
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 80px;
+    padding-bottom: 0px;
+    height: 700px;
+    width: 1000px;
+    display: none;
+}
+
+.clothes-bottom li {
+    position: absolute;
+
+}
+
+.clothes-bottom-arrow {
+    position: relative;
+}
+
+.arrLeft,
+.arrRight {
+    position: absolute;
+    top: -490px;
+    font-size: 80px;
+    color: #ccc;
+    display: none;
+}
+
+.arrLeft {
+    left: 33px;
+    cursor: pointer;
+}
+
+.arrRight {
+    right: 70px;
+    cursor: pointer;
+}
+
+.cha {
+    width: 43px;
+    height: 44px;
+    position: absolute;
+    background: url(../../images/activity/close.png) no-repeat;
+    z-index: 39;
+    top: -20px;
+    right: -17px;
+    opacity: 0.7;
+}
+
+/* <!-- 最低部分 --> */
+/* 背景 */
+.allnew {
+    height: 1240px;
+    background: url(../../images/activity/content-cen_06.jpg) no-repeat;
+    background-size: 100%;
+}
+/* 第一个大图 */
+.allnew-nav-li1 ul {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.allnew-nav-li1 li {
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+/* 第一个小li */
+.allnew-nav-li1-small{
+    width: 1300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.allnew-nav-li1-small ul{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top:900px;
+}
+.allnew-nav-li1-small li {
+    float: left;
+    width: 235px;
+    margin-right: 10px;
+}
+
+/* 第二个大图 */
+.allnew-b2{
+    display: none;
+}
+.allnew-nav-li2 ul {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.allnew-nav-li2 li {
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+/* 第二个小li */
+.allnew-nav-li2-small{
+    width: 1300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.allnew-nav-li2-small ul{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top:900px;
+}
+.allnew-nav-li2-small li {
+    float: left;
+    width: 235px;
+    margin-right: 10px;
+}
+.allnew-nav{
+    position: relative;
+}
+.allnew-nav ul {
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    top: 238px;
+    margin: 0 auto;
+    border: 1px solid #5967a4;
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+}
+
+.allnew-nav li {
+    float: left;
+    width: 49.8%;
+    font-size: 20px;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}

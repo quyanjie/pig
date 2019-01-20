@@ -1,0 +1,197 @@
+/* 背景大图设置 */
+
+body {
+    padding-top: 20px;
+    background: url(../../images/side/index15c75dc7.jpg)no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+
+/* 版心设置 */
+
+.w {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+/* 播放按钮 */
+
+.audio_stop {
+    z-index: 999;
+}
+
+.audioplay {
+    margin-right: 20px;
+}
+
+.audioplay2 {
+    margin-right: 20px;
+}
+
+
+/* 背景流星 */
+
+.space {
+    position: absolute;
+    z-index: 5;
+}
+
+
+/* 音乐按钮旋转 */
+
+@keyframes TopSwitchButton {
+    0% {}
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.audioplay {
+    animation: TopSwitchButton 4s linear infinite;
+}
+
+.audioplay2 {
+    display: none;
+}
+
+.audioplay {
+    display: inline-block;
+}
+
+
+/* 主内容 */
+
+.ThemainContent {
+    position: absolute;
+    z-index: 99;
+    top: 120px;
+    width: 260px;
+    height: 338px;
+}
+
+.ThemainContent ul {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+.ThemainContent li{
+    cursor: pointer;
+}
+/* 图标的大小 */
+.logo{
+    zoom: 1.3;
+}
+
+
+/* 该变li的样式 */
+ul li {
+    border-left: 8px solid transparent;
+    margin-bottom: 27px;
+    margin-right: 10px;
+    font-family: '楷体';
+    font-size: 26px;
+    color: rgb(199, 177, 128);
+}
+
+
+/* 周年庆切换按钮 */
+.ThemainContent span {
+    position: absolute;
+    zoom: 1.5;
+    display: inline-block;
+    top: 350px;
+    left: 12px;
+    width: 112px;
+    height: 38px;
+    background: url(../../images/side/go_jianianhua.png)no-repeat;
+}
+.ThemainContent span:hover{
+    cursor: pointer;
+    background: url(../../images/side/go_jianianhua.png)no-repeat 0 -38px ;
+}
+.ThemainContent i {
+    position: absolute;
+    zoom: 1.5;
+    display: inline-block;
+    top: 350px;
+    left: 12px;
+    width: 112px;
+    height: 38px;
+    background: url(../../images/side/go_fabu.png)no-repeat;
+}
+.ThemainContent i:hover{
+    cursor: pointer;
+    background: url(../../images/side/go_fabu.png)no-repeat 0 -38px ;
+}
+
+
+/* 版心块 */
+
+.EditionHeartBlock {
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+
+.active {
+    border-left: 8px solid #AD9052;
+    color: rgb(197, 118, 13)
+}
+
+
+/* 版心块盒子 */
+
+.EditionHeartBlock li {
+    left: 100px;
+    position: absolute;
+    display: none;
+    width: 1000px;
+    height: 800px;
+}
+/* 条条 */
+.nav_li{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 10px;
+    height: 374px;
+    border:1px solid #AD9052;
+}
+.EditionHeartBlock img{
+    position: absolute;
+}
+/* 图片的大小 */
+.img-1{
+    
+    left: 100px;
+    width: 700px;
+}
+.img-2{
+    width: 1000px;
+}
+.img-3{
+   
+    width: 1000px;
+}
+.img-4{
+    top: -100px;
+    left: -200px;
+}
+.img-5-1{
+    width: 600px;
+    left: 50px;
+}
+.img-5-2{
+    left: 800px;
+    width: 400px;
+}
+.img-6-2{
+    left: 650px;
+}
+.img-7{
+    left: 150px;
+}

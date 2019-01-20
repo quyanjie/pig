@@ -1,0 +1,1402 @@
+/* ::scrollbar {
+    width: 0px;
+} */
+/* 用来控制滚动条 ,同时也可以给子元素的父元素加上overflow:hidden 也行”*/
+html,body{
+    height:100%; 
+    width:100%; 
+    overflow:hidden;
+     margin:0;
+    padding:0;
+}
+.container{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 700%;
+}
+.introduce,.word,.qinggong,.ks{
+    flex-shrink: 0;
+    position: relative; 
+    box-sizing: border-box;
+    /* padding: 30px 0 0 0; */
+    width: 100%;
+    min-width: 1200px;
+    height: 15.9%;
+}
+.play{
+    height: 1080px;
+}
+.lakes-center {
+    position: absolute;
+    left: 50%;
+    margin-left: -365px;
+    top: 20%;
+}
+.lakes>img {
+    width: 1920px;
+}
+.word .bgimgaes {
+    position: relative;
+    z-index: -100;
+    background-size: 100%;
+}
+.introduce {
+    /* padding-top: 30px; */
+    background: url(../../images/game/homepage.9b872906_1.jpg)no-repeat;
+    background-size: 100%;
+}
+/* .introduce,.word {
+    padding-top: 30px;
+} */
+.introduce-header {
+    position:fixed;
+    padding-top: 30px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 999999;
+    /* background-attachment: scroll; */
+}
+.header-left-logo  {
+    padding-left: 40px;
+    height: 110px;
+    width: 225px;
+}
+.header-right-action {
+    /* width: 100%; */
+    padding-right: 95px;
+}
+.header-right-action li {
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.header-right-action li .heightshow {
+    transition: all .2s linear;
+}
+.header-right-action li .heightshow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.header-right-action li span {
+    display: none;
+    position: absolute;
+    background:rgba(0,0,0,.2);
+    color: #CE9562;
+    left: -10px;
+    padding: 4px 5px;
+    width: 40px;
+    text-align: center;
+    
+}
+
+.action-play {
+    background: url(../../images/game/audio_play.6cec22b3.png) no-repeat;
+    animation: aution-infinit  8s linear infinite;
+    
+}
+.action-play-new {
+    background: url(../../images/game/audio_pause.58f80c9b.png) no-repeat;
+    animation: normal;
+}
+@keyframes aution-infinit {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+    }
+} 
+.action-play .audio{
+    width: 100%;
+    height: 100%;
+}
+.music {
+    display: none;
+}
+.classify {
+    background: url(../../images/game/bg-line.2c60a310_2.png)50% no-repeat;
+    position: absolute;
+    width: 1280px;
+    left: 50%;
+    margin-left: -640px;
+    bottom:27%; 
+    /* box-sizing: border-box; */
+}
+.classify .variety {
+    display: inline-block;
+    position: relative;
+    width: 111px;
+    height: 111px;
+    margin-left: 120px;
+    opacity: 1;
+    background: transparent;
+    /* background-color: #0000ff; */
+   
+}
+.classify .mp{margin-left: 70px;}
+.classify .variety .navtxt-around {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    left: 0;
+    top:0;
+    z-index: 0;
+}
+.navtext1 { 
+    z-index: 2;
+    background: url(../../images/game/navtext-2.196194d5_1.png)no-repeat center;
+}
+.navtext2 { 
+    background: url(../../images/game/navtext-3.29d2cb31.png)no-repeat center;
+}
+.navtext3 { 
+    background: url(../../images/game/navtext-4.2ba5f454.png)no-repeat center;
+}
+.navtext4 { 
+    background: url(../../images/game/navtext-5.fcdde8e7.png)no-repeat center;
+}
+.navtext5 { 
+    background: url(../../images/game/navtext-6.757f35a8.png)no-repeat center;
+}
+.navtext6 { 
+    background: url(../../images/game/navtext-7.bbc21523_2.png)no-repeat center;
+}
+.around{
+    position:absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../../images/game/home-pagination.5b1440d6.png)50% no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    margin: 0;
+    transition: all .2s linear;
+}
+.around-new { background: url(../../images/game/home-pagination-checked.a75899d5_1.png)50% no-repeat;}
+.classify .variety:hover .around {
+    transform: rotate(135deg);
+}
+.mouse {
+    position: absolute;
+    bottom: 16%;
+    left: 42%;
+    width: 295px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: .5;
+}
+.mouse p {
+    color: #E9E4C8;
+    font-size: 22px;
+    animation: text-opacity 1.2s infinite alternate;
+}
+@keyframes text-opacity {
+    0%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.word{
+    background-size: 100%;
+    overflow: hidden;
+}
+
+
+.slider {
+    width:77px;
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    margin-top: -300px;
+    /* background: rebeccapurple; */
+    display: none;
+    z-index: 999999;
+    user-select: none;
+}
+.slider li {
+    position: relative;
+    float: left;
+    margin: 2px 0;
+    width: 77px;
+    height: 77px;
+    text-align: center;
+    cursor: pointer;
+    /* background: orangered; */
+}
+.slider li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../../images/game/swiper-nav.0cdcc205.png)no-repeat;
+}
+.slider li i {
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+.slider .slider-menu-li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    left: 47%;
+    bottom: -6px;
+    background:transparent;
+    border: 1px solid #917D5C;
+    border-radius: 15px;
+}
+.slider .slider-menu-flower {
+    background: url(../../images/game/swiper-nav-checked.6fa6c1ec.png)50% no-repeat;
+}
+.slider-i1 {
+    background: url(../../images/game/navtext-1.b1a6bc64_1.png)50% no-repeat;
+}
+.slider-i2 {
+    background: url(../../images/game/navtext-2.196194d5_1.png)50% no-repeat;
+}
+.slider-i3 {
+    background: url(../../images/game/navtext-3.29d2cb31.png)50% no-repeat;
+}
+.slider-i4 {
+    background: url(../../images/game/navtext-4.2ba5f454.png)50% no-repeat;
+}
+.slider-i5 {
+    background: url(../../images/game/navtext-5.fcdde8e7.png)50% no-repeat;
+}
+.slider-i6 {
+    background: url(../../images/game/navtext-6.757f35a8.png)50% no-repeat;
+}
+.slider-i7 {
+    background: url(../../images/game/navtext-7.bbc21523.png)50% no-repeat;
+}
+.slider-i8 {
+    background: url(../../images/game/navtext-8.4286b101_1.png)50% no-repeat;
+}
+
+.big-word {
+    position: relative;
+    left: 50%;
+    top: 10%;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+     /* margin-top:-340px; */
+    height: 780px;
+    text-align: center;
+}
+.word-writings {
+    margin-left: -735px;
+    width: 1470px;
+}
+.school {
+    margin-left: -640px;
+    width: 1280px;
+}
+.big-word .big-title {
+    position: relative;
+    margin: 0 auto;
+    width: 1186px;
+    height: 84px;
+    
+}
+.big-word .word-title {
+    background: url(../../images/game/page-title.11a3fc6d.png) no-repeat;
+    left: 5px;
+}
+.big-word .school-title {
+    background: url(../../images/game/page-title.cca9ada2_1.png) no-repeat;
+    left: 31px;
+}
+.big-word .bodily-title {
+    background: url(../../images/game/page-title.d3826b98_1.png) no-repeat;
+    left: 10px;
+}
+.big-word .looks-title {
+    background: url(../../images/game/page-title2.62764310.png) no-repeat;
+}
+.big-word .play-title {
+    background: url(../../images/game/page-title.ca44d7e0_1.png) no-repeat;
+}
+.big-word .big-title i{
+    position: absolute;
+     font-size: 21px;
+     color: #917D5C;
+     top: 64px;
+    left: 50%;
+}
+.big-title .title-i1 {
+    margin-left: -136px;
+}
+.big-title .school-i2 {
+    margin-left: -94.5px;
+}
+.big-title .bodily-i3 {
+    margin-left: -138px;
+}
+.big-title .play-i4 {
+    margin-left:-138px;
+}
+.story {
+    margin-top: 100px;
+    padding: 0 50px;
+}
+.story .story-list {
+    margin-left: 72px;
+    float: left;
+    position: relative;
+    width: 360px;
+    height: 440px;
+    border: 1px solid #917D5C;
+    transition: all 1s linear;
+    /* display: none; */
+   
+}
+.story .story-list:hover {
+    transform: scale(1.1);
+}
+.story .JH {
+    background: url(../../images/game/video-1-bg.4808fedf.jpg)no-repeat;
+    background-size: 100%;
+    left:-70px;
+    top: -70px;
+    
+}
+.story-list .audio-icon {
+    /* display: block; */
+    position: relative;
+    margin: 0 auto;
+    width: 86px;
+    height: 86px;
+    z-index: 4;
+    bottom: -290px;
+    cursor: pointer;
+}
+.audio-icon .icon-triangle {
+    width: 85px;
+    height: 88px;
+    background: url(../../images/game/video-triangle.e3dd7e92.png) 36px no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.audio-icon .icon-around {
+    width: 85px;
+    height: 88px;
+    background: url(../../images/game/video-play-circle.7dea1b8b.png) 50% no-repeat;
+}
+.story .CS {
+    background: url(../../images/game/video-2-bg.9c835ce0.jpg)no-repeat;
+    background-size: 100%;
+    top: -70px;
+}
+.story .GS {
+    background: url(../../images/game/video-3-bg.d482c981.jpg)no-repeat;
+    background-size: 100%;
+    right:-70px;
+    top: -70px;
+}
+.video-window,.win-video,.qg-win,.player{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2021;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: rgba(0, 0, 0,.7); 
+    display: none;
+}
+.active {
+    display: block;
+}
+.video-window .video-box,.win-video .video-box,.qg-win .video-box {
+    width: 856px;
+    height: 480px;
+    background:rgb(0,0,0);
+    position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    top: 240px;
+    margin: auto; 
+    
+}
+.video-box .video-one,.video-box .qg-video1 {
+    width: 100%;
+    height: 100%;
+}
+.video-window .video-img {
+    position: relative;
+    width: 1200px;
+    height: 675px;
+    overflow: hidden;
+}
+.video-window .img-tog {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 63px;
+    height: 62px;
+    z-index: 999;
+    display: none;
+}
+
+.video-window .img-left {
+    left:350px;
+    background: url(../../images/game/prev.png)no-repeat;
+}
+.video-window .img-right {
+    right: 350px;
+    background: url(../../images/game/next_1.png)no-repeat;
+}
+
+.video-window .video-img img {
+    float: left;
+}
+.video-window .video-box video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* pointer-events: none; */
+}
+.video-window  .video-box .offs,.win-video .video-offs,.video-box .q_offs{ 
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -33px;;
+    height: 33px;
+    width: 33px;
+    background:url(../../images/game/下载.png)no-repeat;
+    cursor: pointer;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+.video-window >.offs {
+   display: block;
+   position: absolute;
+   width: 33px;
+   height: 33px;
+   top: 300px;
+   right: 300px;
+   background:url(../../images/game/下载.png)no-repeat;
+   cursor: pointer;
+   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.habits {
+    width: 300%;
+    position: relative;
+    overflow: hidden;
+    background: url(../../images/game/page-bg.da916bb4_1.jpg);
+}
+.habits .bodily {
+    float:left ;
+    width: 35%;
+}
+.video-box .offs:hover,.video-window .offs:hover{
+    opacity: .6;
+    filter: alpha(opacity=60);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.story .story-list span {
+    display: block;
+    position: absolute;
+    width: 445px;
+    height: 493px;
+    z-index: 2;
+}
+
+.story .story-list .jh-span{
+    left: -87px;
+    top: -56px;
+    background: url(../../images/game/video-1-role.90984ec7.png)100% no-repeat;
+}
+.story .story-list .cs-span {
+    left: -88px;
+    top: -43px;
+    background: url(../../images/game/video-2-role.96d0158c.png)100% no-repeat;
+}
+.story .story-list .gs-span {
+    left: -17px;
+    top: -43px;
+    background: url(../../images/game/video-3-role.5c377a1f.png)100% no-repeat;
+}
+.story .story-list a {
+    display: block;
+    font-size: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.story .story-list .story-list-p{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    font-size: 24px;
+    text-align: center;
+    color: #917D5C;
+}
+.story .story-list .p1{margin-left: -132px;}
+.story .story-list .p2{margin-left: -87px;}
+.story .story-list .p3{margin-left: -72px;}
+.concierge {
+
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+.story-concierge {
+    position: absolute;
+    padding-top: 50px;
+    width: 200%;
+    height: 62%;
+    overflow: hidden;
+    top:94px;
+}
+.story li {
+    position: relative;
+    width: 155px;;
+    float: left;
+    margin-right: 21px;
+    
+}
+.story li img {transition: all .5s linear;}
+.story li img:hover {
+    border: 1.5px solid #917D5C;
+    transform: scale(1.2);
+}
+
+.concierge-i1 {
+    position: absolute;
+    display: block;
+    width: 84px;
+    height: 85px;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -35px;
+    background: url(../../images/game/school.57473dce.png) no-repeat;
+}
+@keyframes aution-infinit{
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+100% {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+    }
+}
+.concierge-i1 span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+.concierge-i{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: url(../../images/game/school-active.49d21347.png) no-repeat;
+    animation: aution-infinit 8s linear infinite;
+   
+}
+/* .story li:hover .concierge-i{
+ 
+} */
+
+@keyframes aution-infinit{
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn);
+        }
+    }
+.story-concierge-i1{
+        position: absolute;
+        display: block;
+        width: 84px;
+        height: 85px;
+        left: 50%;
+        bottom: 30px;
+        margin-left: -35px;
+        
+    }
+ .bd {
+    background: url(../../images/game/badao.3bc2186f_1.png)no-repeat;
+
+}
+.cg {
+    background: url(../../images/game/changge.c1ffc5c5.png)no-repeat;  
+}
+ .cy {
+    background: url(../../images/game/cangyun.d4af75db.png)no-repeat;
+   
+}
+ .gb {
+    background: url(../../images/game/gaibang.2d7c2c4a.png)no-repeat;
+    
+}
+ .mj {
+    background: url(../../images/game/mingjiao.a4be5104.png)no-repeat;
+ }
+ .tm {
+    background: url(../../images/game/tangmen.74d0d582.png)no-repeat;
+    
+}
+  .wd {
+    background: url(../../images/game/wudu.989d487c_2.png)no-repeat;
+}
+.cj {
+    background: url(../../images/game/cangjian.084b179d_1.png)no-repeat;
+}
+.tc {
+    background: url(../../images/game/tiance.4c092a2a.png)no-repeat;
+}
+
+.cy {
+    background: url(../../images/game/chunyang.95ebf8c3_2.png)no-repeat;
+}
+.sl {
+    background: url(../../images/game/shaolin.aec160ed_2.png)no-repeat;
+}
+.qx {
+    background: url(../../images/game/qixiu.33606522_2.png)no-repeat;
+}
+.wh {
+    background: url(../../images/game/wanhua.3fd8bae5_1.png)no-repeat;
+}
+
+
+
+.story-concierge p {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 50%;
+    margin-left:-20px;
+    bottom: -20px;
+    text-align: center;
+}
+.concierge>i {
+    position: absolute;
+    display: block;
+    width: 63px;
+    height: 63px;
+    top: 50%;
+    cursor: pointer;
+    transition: all .2s linear;
+    z-index: 999;
+}
+.concierge>i:hover{
+    transform: scale(1.1);
+}
+.concierge .btn-left {
+    left: 0;
+    background: url(../../images/game/btn-prev.05e8d72a_1.png)no-repeat;
+}
+.concierge .btn-right {
+    right: 0;
+    background: url(../../images/game/btn-next.abc1257a_2.png)no-repeat;
+   
+}
+.story .bodily-sex ,.story .bodily-p {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 460px;
+    margin-left: 70px;
+    transition: all .2s linear;
+}
+.story .bodily-sex:hover,.story .bodily-p:hover {
+    border-left:1px solid #1B2332;
+    border-right: 1px solid #1B2332;
+    border-top: 1px solid #1B2332;
+    transform: scale(1.1);
+}
+.story .Lolita {
+    background: url(../../images/game/role-1.6558772d.png)no-repeat;
+}
+.story .gril {
+    background: url(../../images/game/role-2.1c458365.png)no-repeat;
+}
+.story .boy {
+    background: url(../../images/game/role-3.91f6ccf5_2.png)no-repeat;
+}
+.story .man {
+    background: url(../../images/game/role-4.712ffc23.png)no-repeat;
+}
+
+.story .MJ {
+    background: url(../../images/game/img-mijing.88cfa730_2.png)no-repeat;
+    border:1px solid rgba(0,0,0,.2);
+    border-bottom: 0;
+}
+.story .DK {
+    background: url(../../images/game/img-duikang.f5e4f162.png)no-repeat;
+    border:1px solid rgba(0,0,0,.2);
+    border-bottom: 0;
+}
+.story .QY {
+    background: url(../../images/game/img-qiyu.4a3d1f81.png)no-repeat;
+    border:1px solid rgba(0,0,0,.2);
+    border-bottom: 0;
+}
+.story .SC {
+    background: url(../../images/game/img-shengcun.566764a3.png)no-repeat;
+    border:1px solid rgba(0,0,0,.2);
+    border-bottom: 0;
+}
+.opcitys {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background: rgba(0,0,0,.1);
+}
+.bodily-sex i,.bodily-play i{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -43px;
+    width: 86px;
+    height: 39px;
+}
+.diwe{
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.diwe p {
+    position: absolute;
+    bottom: -48px;
+    /* height: 20px; */
+    left: 50%;
+    width: 100%;
+    /* margin-left: -; */
+    text-align: center;
+    font-size: 18px;
+    color: #ad9052;
+}
+.diwe .p1 {
+    margin-left: -132px;
+}
+.diwe .p2 {
+    margin-left: -117px;
+}
+.diwe .p3 {
+    margin-left: -112px;
+}
+.diwe .p4 {
+    margin-left: -117px;
+}
+.bodily-play .MJ-i,.bodily-play .DK-i,.bodily-play .QY-i ,.bodily-play .SC-i {
+    left: 50%;
+    margin-left: -15px;
+    height: 87px;
+    text-align: center;
+    line-height: 87px;
+    font-size: 20px;
+    color: #ad9052;
+}
+.MJ-i,.DK-i,.QY-i,.SC-i{
+    background:url(../../images/game/btn-active.bf3d6d86_2.png)no-repeat;
+}
+.Lolita-i {
+    background: url(../../images/game/icon-1.850ebf4c_1.png)no-repeat;
+}
+.gril-i {
+    background: url(../../images/game/icon-2.c4f52045.png)no-repeat;
+}
+.boy-i {
+    background: url(../../images/game/icon-3.17bf3c9f.png)no-repeat;
+}
+.man-i {
+    background: url(../../images/game/icon-4.c5be8f2c_2.png)no-repeat;
+}
+.bodily-toggle {
+    position: absolute;
+    bottom: 112px;
+    left: 17%;
+    margin-left: -120px;
+    /* background: red; */
+}
+.bodily-toggle .bodily-one {
+    position: relative;
+    width: 300px;
+    height: 85px;
+    background: url(../../images/game/nav-line.16cea1f4.png) center no-repeat;
+    left: 50%;
+    margin-left: -150px;
+    
+}
+.bodily-one .one-span {
+    position: absolute;
+    width: 84px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    color: #CE9562;
+    font-size: 19px;
+    cursor: pointer;
+}
+.bodily-one .span-bg-img {
+    background: url(../../images/game/nav-active.cb21f66f.png)no-repeat !important;
+}
+.bodily-one .s1 {
+    background: url(../../images/game/nav-active.cb21f66f.png)no-repeat;
+    background: url(../../images/game/btn.572343b4.png) no-repeat;
+    bottom: 0;
+    left: 0;
+}
+.bodily-one .s2{
+    bottom: 0;
+    right: 0;
+    background: url(../../images/game/btn.572343b4.png) no-repeat;
+}
+.bodily-left .bodily-gif {
+    position: relative;
+    float: left;
+    width: 551px;
+    height: 301px;
+}
+.bodily-left .NL {
+    margin-left: 190px;
+}
+.bodily-left  .btn {
+    display: block;
+    position: absolute;
+    bottom: 97px;
+    left: 50%;
+    width: 92px;
+    height: 95px;
+    margin-left: -31px;
+    background: url(../../images/game/icon-video.0d7fe678.png)no-repeat;
+    cursor: pointer;
+}
+video {
+    position: absolute;
+    top: -44px;
+    height: 1124px;
+}
+
+.m {
+    position: absolute;
+    z-index: 1;
+}
+
+.bigY {
+    position: absolute;
+    width: 134px;
+    height: 137px;
+    left: 893px;
+    top: 354.5px;
+    background: url(../../images/game/big.png) no-repeat;
+    animation: fc1 2s linear infinite;
+    z-index: 2;
+}
+
+@keyframes fc1 {
+    0% {}
+
+    100% { 
+        transform: rotate(-360deg);
+    }
+}
+
+.midY {
+    position: absolute;
+    width: 116px;
+    height: 119px;
+    left: 902px;
+    top: 364px;
+    position: absolute;
+    background: url(../../images/game/mid.png) no-repeat;
+    animation: fc2 5s linear infinite;
+    z-index: 3;
+}
+
+@keyframes fc2 {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.smallbtn {
+    position: absolute;
+    width: 26px;
+    height: 39px;
+    left: 947px;
+    top: 402px;
+    background: url(../../images/game/small.png) no-repeat;
+    z-index: 4;
+}
+.txt{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin: auto;
+    text-align: center;
+    width: 1186px;
+    height: 200px;
+    background: url(../../images/game/txt.png) no-repeat center top;
+}
+.txt p {
+    margin-top: 65px;
+    color: #ad9052;
+    font-size: 20px;
+
+}
+.logo {
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 50px;
+}
+.qinggong .qg-video2 {
+    width: 100%;
+    height: 100%;
+    background: raga(0,0,0,.7);
+    /* display: none; */
+    z-index: 33;
+}
+.player img {
+    position: relative;
+}
+.player-center {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    float: left;
+}
+.center-mj {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-left: -600px;
+    margin-top: -250px;
+    overflow: hidden;
+    /* padding-top: 10%; */
+    /* background: red; */
+}
+.player-list {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    /* background: blue; */
+    background: url(../../images/game/nav-bg-line.49e2aed5.png)50% no-repeat;
+
+}
+.list-uls {
+    margin: 0 auto;
+    width: 643px;
+    /* height: 20px; */
+    background: url(../../images/game/nav-bg-line.49e2aed5.png)no-repeat;
+
+}
+.list-uls li {
+    float: left;
+    width: 84px;
+    height: 85px;
+    line-height: 85px;
+    color: #ad9052;
+    font-size: 18px;
+    text-align: center;
+    background: url(../../images/game/nav.23addebe_2.png)no-repeat;
+    cursor:pointer;
+}
+.list-uls .bgc{
+    background: url(../../images/game/btn-active.bf3d6d86_2.png)no-repeat;
+}
+.list-uls li:nth-child(1){
+    margin-left: 10px;
+}
+.list-uls li:nth-child(2){
+    margin-left: 100px;
+}
+.list-uls li:nth-child(3){
+    margin-left: 96px;
+}
+.list-uls li:nth-child(4){
+    margin-left: 90px;
+}
+.mj-title {
+    float: left;
+    width: 76px;
+    text-align: center;
+    font-size: 70px;
+    color: #bda371;
+    font-family: '新宋体';
+}
+.lang-y,.lang-x {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-right:10px;
+}
+.lang-y {
+    height: 500px;
+    width: 554px;
+}
+.lang-x {
+    width: 268px;
+    height: 246px;
+    background: red;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.x-last {
+    width: 546px;
+}
+.lang-x:nth-child(1),.lang-x:nth-child(2){
+    margin-bottom: 10px;
+}
+.lang-y img,.lang-x img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all .2s linear;
+    z-index: 10;
+}
+.lang-y a:hover img,.lang-x a:hover img{
+    transform: scale(1.1);
+
+}
+.lang-y a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px;
+    display: block;
+    overflow: hidden;
+   
+}
+
+.y-border {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: auto;
+    border: 2px solid hsla(39, 37%, 59%, .3);
+    z-index: 15;
+}
+.y-txt {
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    z-index: 20;
+}
+.txt-1 {
+    font-size: 18px;
+    color: #fff;
+    text-indent: 20px;
+    line-height: 42px;
+}
+.txt-2 {
+    font-size: 16px;
+    color: #bba374;
+    text-indent: 20px;
+}
+.player-mj,.player-qy,.player-sc{
+    display: none;
+}
+/* .ks {
+    width: 1920px;
+    height: 943px;
+    overflow: hidden;
+} */
+.bigbox {
+    position: relative;       
+    width: 3840px;
+    height: 1080px;
+}
+
+li {
+    list-style: none;
+}
+
+.bigbox > li {
+    width: 1920px;
+    float: left;
+    height: 1080px;
+}
+
+/* .yz {
+    position: relative;
+    width: 1920px;
+    height: 943px;
+    overflow: hidden;
+}
+
+/* .ul2 li {
+    position: absolute;
+    width: 1920px;
+    height: 943px;
+} */
+.ul2 li {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+}
+
+.q1 {
+    background: url(../../images/game/bbp.jpg) no-repeat center center;
+    background-size: 100%;
+    z-index: 2;
+}
+
+.q2 {
+    background: url(../../images/game/bhy.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.q3 {
+    background: url(../../images/game/bst.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.q4 {
+    background: url(../../images/game/bdx.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+/* .ul1 {
+    position: absolute;
+    top: 200px;
+    right: 380px;
+    z-index: 3;
+} */
+.ul1 {
+    position: absolute;
+    top: 200px;
+    left: 1500px;
+    z-index: 3;
+}
+
+.ul1 li {
+    position: absolute;
+
+    list-style: none;
+}
+
+.ul1 .s1 {
+    width: 293px;
+    height: 118px;
+    top: 0px;
+    background: url(../../images/game/bp.jpg)no-repeat;
+}
+
+.ul1 .s2 {
+    width: 293px;
+    height: 118px;
+    top: 133px;
+    background: url(../../images/game/hy.jpg)no-repeat;
+}
+
+.ul1 .s3 {
+    width: 293px;
+    height: 118px;
+    top: 266px;
+    background: url(../../images/game/st.jpg)no-repeat;
+}
+
+.ul1 .s4 {
+    width: 293px;
+    height: 118px;
+    top: 399px;
+    background: url(../../images/game/dx.jpg)no-repeat;
+}
+
+.ul1 div {
+    width: 293px;
+    height: 118px;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.yc {
+    display: none;
+
+}
+
+.btn1 {
+    position: absolute;
+    width: 84px;
+    height: 85px;
+    line-height: 85px;
+    top: 760px;
+    color: gold;
+    font-size: 20px;
+    font-family: '隶书';
+    text-align: center;
+    left: 850px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.btn2 {
+    position: absolute;
+    width: 84px;
+    height: 85px;
+    top: 760px;
+    left: 1050px;
+    color: gold;
+    font-size: 20px;
+    font-family: '隶书';
+    line-height: 85px;
+    z-index: 3;
+    text-align: center;
+    cursor: pointer;
+}
+.hide{
+    background: url(../../images/game/nav.23addebe.png) no-repeat;
+}
+.show{
+    background: url(../../images/game/nav-active.cb21f66f.png) no-repeat;
+}
+
+.page2 {
+    position: absolute;
+    left: 1920px;
+    width: 1920px;
+    height: 943px;
+    background: url(../../images/game/method-bg.183c3a60.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.trq {
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    font-size: 70px;
+    font-family: '宋体';
+    width: 50px;
+    height: 200px;
+    color: #bda371;
+}
+
+.fls {
+    margin-left: 400px;
+    width: 544px;
+    height: 500px;
+    float: left;
+    background: url(../../images/game/cosplay.23f57a0f.jpg);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.fr-s ul {
+    width: 600px;
+    height: 500px;
+}
+.photo {
+    margin-top: 250px;
+}
+.fr-s {
+    float: left;
+}
+
+.fr-s li {
+    float: left;
+    width: 270px;
+    height: 246px;
+    background-size: 100%;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+.fr-s li:hover ,.fls:hover {
+    transform: scale(1.1);
+}
+
+.fr1 {
+    background: url(../../images/game/cartoon.bbbdf97e.jpg) no-repeat;
+}
+.fr2 {
+    background: url(../../images/game/video.4d112245.jpg) no-repeat;
+}
+.fr3 {
+    background: url(../../images/game/music.9135324b.jpg) no-repeat;
+}
+.fr4 {
+    background: url(../../images/game/handmade.8ed69358.jpg) no-repeat;
+}
+.fr-s ul span {
+    display: inline-block;
+    margin-top: 191px;
+    width: 270px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.5);
+    color:#bda371;
+    text-align: center;
+    line-height: 55px;
+    font-family: '宋体';
+    font-size: 25px;
+}
+.fls span {
+    display: inline-block;
+    margin-top: 445px;
+    width: 544px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.5);
+    color:#bda371;
+    text-align: center;
+    line-height: 55px;
+    font-family: '宋体';
+    font-size: 25px;
+}

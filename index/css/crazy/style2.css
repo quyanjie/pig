@@ -1,0 +1,384 @@
+/*导航部分*/
+body {
+	width: 100%;
+	height: 100%;
+	background-color:#f2e5dc;
+}
+.biao1 {
+	position: relative;
+	width: 380px;
+	height: 140px;
+	text-align: center;
+	margin:30px auto;
+}
+/*小标题*/
+.biao1 h2 {
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	color: #d2746a;	
+}
+/*大标题*/
+.biao1 h1 {
+	height: 70px;
+	line-height: 70px;
+	font-size: 40px;
+	color: #882f2a;
+}
+
+/*配套扇子切换图 */
+/*.shan{
+	position: relative;
+	background:url(../../images/crazy/images1/b4.png);
+}*/
+.shan {
+	position: relative;
+}
+.bj1 {
+	position: absolute;
+	top:1px;
+	/* left:1055px; */
+	right: -1008px;
+}
+.top1 {
+	width: 1085px;
+	height: 565px;
+	margin: 0 auto;
+	padding-top: 30px;
+	/*position: relative;*/
+}
+.top1 li {
+	float: left;
+    left: 106px;
+	position: absolute;
+	display: none;
+
+}
+.top1 li:first-child {
+	display: block;
+}
+.bottom {
+	position: absolute;
+	height: 84px;
+	width: 500px;
+	top:715px;
+	left:460px;
+}
+.bottom li {
+	/*position: absolute;*/
+	display: inline-block;
+	/*float: left;*/
+	cursor: pointer;
+	width: 84px;
+	height: 84px;
+	margin: 10px;
+	background: url(../../images/crazy/images2/tab-icon.png);
+}
+.icon1 {
+	background-position: 0 0;
+}
+.icon2 {
+	background-position: -109px 0;
+}
+.icon3 {
+	background-position: -217px 0;
+}
+.icon4 {
+	background-position: -326px 0;
+}
+.icon1.active {
+	background-position: 0 -80px;
+}
+.icon2.active {
+	background-position: -109px -80px;
+}
+.icon3.active {
+	background-position: -218px -80px;
+}
+.icon4.active {
+	background-position: -326px -80px;
+}
+/*新款金发部分*/
+.gold {
+	width: 875px;
+	height: 745px;
+	margin: 75px auto;
+	position: relative;
+}
+.bj2 {
+	position: absolute;
+	top:92px;
+	left:-704px;
+	height: 700px;
+}
+.gold li {
+	right: -200px;
+	position: absolute;
+	margin: 25px auto 0;
+	display: none;
+	/*display: none;*/
+}
+.gold li:first-child {
+	display: block;
+}
+.gold  li img {
+	height: 595px;
+}
+/*设置左右按钮位置*/
+.arrow {
+	display: none;
+}
+.gold:hover .arrow {
+	display:block;
+}
+.arrow-left,.arrow-right {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,.3);
+	color: #fff;
+	font:50px/50px '宋体';
+	top:345px;
+	margin-top: -25px;
+	text-align: center;
+}
+.arrow-left {
+	left:94px;
+}
+.arrow-right {
+	right: -309px;
+}
+/*白兔部分*/
+.rabbit {
+	position: relative;
+}
+/*上面大白兔*/
+.rabbit {
+
+	position: relative;
+}
+.bj3 {
+	position: absolute;
+	top:125px;
+	left:-360px;
+	height: 619px;
+}
+
+.shang {
+	width: 1085px;
+	margin:0 auto;
+	height: 580px;
+	position: relative;
+}
+.shang li {
+	right: -200px;
+	position: absolute;
+	display: none;
+}
+.shang li:first-child {
+	display: block;
+}
+.shang li.active {
+	display: block;
+}
+/*小图部分*/
+.xia1 {
+	position: absolute;
+	height: 80px;
+	width: 600px;
+	top:625px;
+	left:395px;
+}
+.xia1 li img {
+	position: relative;
+	width: 150px;
+}
+.xia1 li {
+	display: inline-block;
+	cursor: pointer;	
+	margin: 10px;
+	border:2px solid #c4957e;
+	text-align: center;
+}
+/*名字部分*/
+.xia1 p {
+	position: absolute;
+	top:8px;
+	display: none;
+	width: 150px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	z-index: 2;
+}
+
+/*服装复刻部分*/
+.fashion {
+	position: relative;
+}
+.tou {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 50px;
+	margin-right: 10px;
+	margin-left: 400px;
+}
+.tou li {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-right: 20px;
+	border-radius: 15px;
+	border:2px solid #1aa2a4;
+	background-color: #f2ffff;
+}
+.tou li.active{
+	border:2px solid #f2ffff;
+	background-color: #1aa2a4;
+}
+.fox {
+	display: block;
+	position: relative;
+}
+.light {
+	display: none;
+	position: relative;
+}
+.fair1,.fair2 {
+	position: absolute;
+	right: -200px;
+	z-index: 2;
+	top:-155px;
+	/*opacity:0;*/
+	/*-webkit-transition:all .4s ease-in-out;
+	-o-transition:all .4s ease-in-out;*/
+	transition:all .4s ease-in-out;
+}
+.up,.up1 {
+	width: 1085px;
+	height: 615px;
+	margin: 0 auto;
+	position: relative;
+}
+.up li {
+	position: absolute;
+	display: none;
+}
+.up1 li {
+	position: absolute;
+	display: none;
+}
+.up li:first-child {
+	display: block;
+}
+.up1 li:first-child {
+	display: block;
+}
+.down,.down1 {
+	position: absolute;
+	height: 86px;
+	width: 500px;
+	top:555px;
+	left:385px;
+}
+.down li {
+	/*position: absolute;*/
+	display: inline-block;
+	/*float: left;*/
+	width: 86px;
+	height: 86px;
+	margin: 10px;
+	background: url(../../images/crazy/images2/q.png);
+}
+.down1 li {
+	/*position: absolute;*/
+	display: inline-block;
+	/*float: left;*/
+	cursor: pointer;
+	width: 86px;
+	height: 86px;
+	margin: 10px;
+	background: url(../../images/crazy/images2/q.png);
+}
+.down .icon11 {
+	background-position: -19px -2px;
+}
+.down1 .icon10 {
+	background-position: -19px -2px;
+}
+
+.down .icon22 {
+	background-position: -129px -2px;
+}
+.down1 .icon20 {
+	background-position: -129px -2px;
+}
+
+.down .icon33 {
+	background-position: -238px -2px;
+}
+.down1 .icon30 {
+	background-position: -238px -2px;
+}
+
+.down .icon44 {
+	background-position: -347px -2px;
+}
+.down1 .icon40 {
+	background-position: -347px -2px;
+}
+
+.icon11.active {
+	background-position: -18px -88px;
+}
+.icon10.active {
+	background-position: -18px -88px;
+}
+
+.icon22.active {
+	background-position: -126px -88px;
+}
+.icon20.active {
+	background-position: -126px -80px;
+}
+
+.icon33.active {
+	background-position: -237px -88px;
+}
+.icon30.active {
+	background-position: -237px -88px;
+}
+
+.icon44.active {
+	background-position: -347px -88px;
+}
+.icon40.active {
+	background-position: -347px -88px;
+}
+/*奢华披风部分*/
+.biao2 {
+	margin:80px auto 0;
+}
+.feng ul{
+	/*width: 1290px;*/
+	height: 650px;
+	border: 2px solid #dec4b6;
+}
+.feng {
+      width: 1204px;
+      height: 650px;
+      
+      margin: 25px auto;
+    }
+.feng li{
+      width: 200px;
+      height: 650px;
+      /*border: 1px solid #000;*/
+      float: left;
+    }

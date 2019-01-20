@@ -1,0 +1,54 @@
+
+img {
+  border: 0;
+  vertical-align: top;
+}
+a, button {
+  outline: none;
+  cursor: pointer;
+}
+.slide {
+  height: 500px;
+  position: relative;
+}
+.slide li {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  transition: all .5s;
+}
+.slide li img {
+  width: 100%;
+}
+.arrow {
+  position: relative;
+  z-index: 99;
+  top: 50%;
+  display: none;
+}
+.w:hover .arrow {
+  display: block;
+}
+
+.prev, .next {
+  width: 76px;
+  height: 112px;
+  position: absolute;
+  top: 50%;
+  margin-top: -56px;
+  background: url(../../images/phone/prev.png) no-repeat;
+  z-index: 99;
+}
+
+.next {
+  right: 0;
+  background-image: url(../../images/phone/next.png);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,394 @@
+a {
+  color: #fff;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.logo-main {
+  width: 100%;
+  height: 50px;
+  background-color: #fbfbfb;
+}
+.logo {
+  line-height: 48px;
+}
+.ul-r {
+  float: right;
+}
+.ul-r li {
+  float: left;
+}
+.ul-r li a {
+  color: #e94a37;
+  font-size: 13px;
+  padding: 0 18px;
+}
+.ul-r li:hover {
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e94a37;
+}
+.logo .ul-r .b a {
+  color: #555555;
+}
+/* 导航精灵图 */
+.nav {
+  background: url("../../images/cosplay/bg-head.jpg") repeat-x;
+}
+.nav ul a {
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+}
+.cos-branch .line:hover{
+  text-decoration: underline;
+}
+
+.nav ul li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 55px;
+  border-right: 2px solid #222;
+}
+.nav ul span {
+  position: absolute;
+  display: inline-block;
+  top: -44px;
+  left: 58px;
+  width: 35px;
+  height: 35px;
+}
+.nav .works li .index {
+  background: url(../../images/cosplay/doujin_emoji.png) no-repeat;
+}
+.nav .works li .pics,
+.cos-branch .fl .index {
+  background: url(../../images/cosplay/doujin_emoji.png) no-repeat -40px 0;
+}
+.nav .works li .cos,
+.homo-cos .pics {
+  background: url(../../images/cosplay/doujin_emoji.png) no-repeat -240px 0;
+}
+.nav .works li .video,
+.cos-branch .videos .video{
+  background: url(../../images/cosplay/doujin_emoji.png) no-repeat -120px 0;
+}
+.nav .works li .music,
+.cos-branch .musics .music{
+  background: url(../../images/cosplay/doujin_emoji.png) no-repeat -160px 0;
+}
+.nav .works li .around {
+  background: url(../../images/cosplay/doujin_emoji.png) no-repeat -200px 0;
+}
+.nav .fl .works {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.nav .fr {
+  position: relative;
+}
+.nav .fr .keywords {
+  position: absolute;
+  left: -175px;
+  top: 75px;
+  width: 160px;
+}
+.nav .fr input {
+  position: relative;
+  width: 160px;
+  height: 30px;
+  margin-left: 40px;
+  padding-left: 5px;
+  background: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+.nav .works .nRight {
+  border-right: none;
+}
+.nav .keywords em {
+  position: absolute;
+  top: 6px;
+  right: -42px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../images/cosplay/gb.png") no-repeat;
+}
+.nav .keywords em a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.nav .log {
+  position: absolute;
+  left: -135px;
+  top: 40px;
+  display: inline-block;
+  width: 130px;
+}
+/* nav样式结束 */
+/* banner样式开始 */
+.focus .bgi {
+  height: 440px;
+  margin-bottom: 30px;
+  background: url("../../images/cosplay/banner1.jpg") no-repeat center;
+}
+.focus .w a {
+  display: inline-block;
+}
+.focus ul {
+  height: 160px;
+  margin-bottom: 30px;
+}
+.focus li {
+  float: left;
+  width: 270px;
+  height: 160px;
+  margin-right: 9px;
+}
+.focus .nRight {
+  margin-right: 0;
+}
+/* banner部分样式结束 */
+
+.cos-branch .description{
+  margin-top: 30px;
+    margin-bottom: 20px;
+}
+.cos-branch .roles .index,
+.homo-cos .pics,
+.cos-branch .videos .video,
+.cos-branch .musics .music{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.cos-branch .fl i {
+  font-size: 30px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.cos-branch .fr {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid #9dcdfe;
+  border-radius: 5px;
+}
+.cos-branch .fr a {
+  color: #9dcdfe;
+  font-size: 16px;
+}
+.cos-branch-roles,
+.cos-branch-cos,
+.cos-branch-video,
+.cos-branch-music{
+    background: #fff;
+    padding: 14px;
+    box-shadow: 1px 1px 1px 2px #ccc;
+}
+.roles ul{
+  height: 330px;
+}
+.cos-branch-roles ul{
+  height: 330px;
+}
+
+.cos-branch-roles li{
+    float: left;
+    margin-right: 10px;
+}
+.cos-branch-roles ul li > a{
+    display: inline-block;
+    width: 210px;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+.cos-branch-roles .nRight,
+.cos-branch-video .nRight{
+    margin-right: 0;
+}
+.cos-branch-roles img{
+    width: 220px;
+}
+.cos-branch-roles p a,
+.cos-branch-video p a {
+    display: inline-block;
+    color: #333;
+}
+.cos-branch-cos p a:hover{
+    text-decoration: underline;
+    color: #000;
+
+}
+.cos-branch-roles p a:hover{
+    text-decoration: underline;
+}
+.cos-branch-roles li p i,
+.cos-branch-cos ul li i,
+.cos-branch-video ul li i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../../images/cosplay/icon.png) no-repeat -6px -159px;
+    vertical-align: bottom;
+}
+.cos-branch .homo-cos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cos-branch-cos ul{
+    height: 450px;
+}
+.cos-branch-cos li{
+    float: left;
+    margin-right: 4px;
+}
+.cos-branch-cos ul .nRight{
+    margin-right: 0;
+}
+.cos-branch-cos ul li >a{
+    display: inline-block;
+    width: 270px;
+    /* height: 270px; */
+    /* overflow: hidden; */
+    margin-bottom: 10px;
+}
+.cos-branch-cos ul img,.cos-branch-video ul img{
+    width: 270px;
+}
+.cos-branch-cos ul li span{
+    color: #333;
+}
+
+.cos-branch-video li .cover{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.cos-branch-video li .cover:hover{
+  opacity: .5;
+}
+.cos-branch-video ul{
+  height: 200px;
+  margin-bottom: 20px;
+}
+.cos-branch-video li{
+  position: relative;
+  float: left;
+  width: 265px;
+  height: 240px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.cos-branch-video li >a{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* 同人音乐部分 */
+.cos-branch-music .mid i,h5,span,em,strong{
+  display: inline-block;
+}
+.cos-branch-music{
+  height: 180px;
+  margin-bottom: 50px;
+}
+.cos-branch-music .mid{
+  width: 420px;
+  margin-left: 20px;
+}
+.cos-branch-music .mid .singers{
+  margin-left: 10px;
+}
+.cos-branch-music .mid em{
+  padding-right: 5px;
+  width: 15px;
+  height: 15px;
+  background: url('../../images/cosplay/sprite.png') no-repeat -9px -57px;
+}
+.cos-branch-music .mid strong{
+  width: 15px;
+  height: 15px;
+  background: url('../../images/cosplay/sprite.png') no-repeat -33px -59px;
+}
+.cos-branch-music .mid i{
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  background: orange;
+  font-size: 14px;
+}
+.cos-branch-music .mid .music-list{
+  height: 30px;
+  padding-top: 6px;
+}
+.cos-branch-music .mid a{
+  color: #333;
+}
+.cos-branch-music .mid .sprite,
+.cos-branch-music .loading{
+  border: 0;
+}
+.cos-branch-music .loading{
+  width: 368px;
+}
+.cos-branch-music .loading strong{
+  width: 7px;
+  height: 14px;
+  background: url('../../images/cosplay/sprite.png') no-repeat 0 -58px;
+}
+/* footer页面底部 开始 */
+
+.footer {
+  height: 140px;
+  width: 100%;
+  background: #222;
+  padding: 50px 0px;
+}
+
+.center-t-logo {
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.center-t-link a,
+span {
+  font-size: 14px;
+  color: #666;
+}
+
+.center-t-link span {
+  margin: 0 2px;
+}
+
+.center-c {
+  margin-bottom: 15px;
+}
+
+.center-d-copyright img {
+  margin-right: 10px;
+}
+
+.footer .center-c p,
+.center-d-text p {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+/* footer页面底部 结束 */
